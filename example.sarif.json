@@ -1,0 +1,172 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "automationDetails": {
+        "description": {
+          "text": "This is the October 10, 2018 nightly run of the CodeScanner tool on all product binaries in the 'master' branch of the 'sarif-sdk' repo"
+        },
+        "id": "Nightly CredScan run for sarif-sdk/master/2018-10-05",
+        "guid": "d541006e-582d-4600-a603-64925b7f7f35",
+        "correlationGuid": "53819b2e-a790-4f8b-b68f-a145c13b4f39"
+      },
+      "taxonomies": [
+        {
+          "guid": "1A567403-868F-405E-92CF-771A9ECB03A1",
+          "name": "Requirement levels",
+          "shortDescription": {
+            "text": "This taxonomy classifies rules according to whether their use is required or recommended by company policy."
+          },
+          "taxa": [
+            {
+              "id": "RQL1001",
+              "name": "Required",
+              "shortDescription": {
+                "text": "Rules in this category are required by company policy. All violations must be fixed unless an exemption is granted."
+              }
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "semanticVersion": "5.0.0",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "TUT1001",
+              "name": "InvalidUri",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "shortDescription": {
+                "text": "Properties defined with the 'uri' or 'uri-reference' format must contain valid URIs.",
+                "markdown": "Properties defined with the `uri` or `uri-reference` format must contain valid URIs."
+              },
+              "fullDescription": {
+                "text": "Every JSON property whose value is defined by the schema to be a URI (with \"format\": \"uri\" or \"format\": \"uri-reference\") must contain a valid URI.",
+                "markdown": "Every JSON property whose value is defined by the schema to be a URI (with `\"format\": \"uri\"` or `\"format\": \"uri-reference\"`) must contain a valid URI."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "The URI '{0}' is invalid.",
+                  "markdown": "The URI `{0}` is invalid."
+                }
+              },
+              "relationships": [
+                {
+                  "target": {
+                    "id": "RQL1001",
+                    "index": 0,
+                    "toolComponent": {
+                      "name": "Requirement levels",
+                      "guid": "1A567403-868F-405E-92CF-771A9ECB03A1",
+                      "index": 0
+                    }
+                  },
+                  "kinds": [
+                    "superset"
+                  ],
+                  "description": {
+                    "text": "This relationship specifies that this rule is classified as 'Required'."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "originalUriBaseIds": {
+        "REPOROOT": {
+          "description": {
+            "text": "The directory into which the repo was cloned."
+          },
+          "properties": {
+            "comment": "The SARIF producer has chosen not to specify a URI for REPOROOT. See §3.14.14, NOTE 1, for an explanation."
+          }
+        },
+        "SRCROOT": {
+          "uri": "src/",
+          "uriBaseId": "REPOROOT",
+          "description": {
+            "text": "The r."
+          },
+          "properties": {
+            "comment": "SRCROOT is expressed relative to REPOROOT."
+          }
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "sarif-tutorials/samples/Introduction/simple-example.js"
+          },
+          "length": 3444,
+          "sourceLanguage": "javascript",
+          "hashes": {
+            "sha-256": "b13ce2678a8807ba0765ab94a0ecd394f869bc81"
+          }
+        }
+      ],
+      "results": [
+        {
+          "properties": {
+            "comment": "The ruleIndex property points into the array tool.driver.rules."
+          },
+          "ruleId": "TUT1001",
+          "level": "error",
+          "ruleIndex": 0,
+          "message": {
+            "id": "default",
+            "arguments": [
+              "//C:/code/dev"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "TextFile.txt",
+                  "index": 0
+                },
+                "region": {
+                  "charOffset": 1,
+                  "charLength": 2
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md",
+                  "uriBaseId": "REPOROOT",
+                  "properties": {
+                    "comment": "If REPOROOT is C:\\project, this file location resolves to C:\\project\\README.md"
+                  }
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 19,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "BAD"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 4,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "/// This is a BAD word."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
