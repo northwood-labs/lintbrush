@@ -60,8 +60,8 @@ github.com/northwood-labs/archstring v0.0.0-20240514202917-e9357b4b91c8/go.mod h
 github.com/northwood-labs/cli-helpers v0.0.0-20240514222150-ad603e1e5510 h1:e9hJ811tttfQKOMka/zpZkNpUBNl5AxL5CvP+zNKfHU=
 github.com/northwood-labs/cli-helpers v0.0.0-20240514222150-ad603e1e5510/go.mod h1:0q3D+6HFCoJczVpxOoIg2cnyw5GB8My7ihU7hdggcHc=
 github.com/owenrumney/go-sarif v1.1.1/go.mod h1:dNDiPlF04ESR/6fHlPyq7gHKmrM0sHUvAGjsoh8ZH0U=
-github.com/owenrumney/go-sarif/v2 v2.3.1 h1:77opmuqxQZE1UF6TylFz5XllVEI72WijgwpwNw4JTmY=
-github.com/owenrumney/go-sarif/v2 v2.3.1/go.mod h1:MSqMMx9WqlBSY7pXoOZWgEsVB4FDNfhcaXDA1j6Sr+w=
+github.com/owenrumney/go-sarif/v2 v2.3.3 h1:ubWDJcF5i3L/EIOER+ZyQ03IfplbSU1BLOE26uKQIIU=
+github.com/owenrumney/go-sarif/v2 v2.3.3/go.mod h1:MSqMMx9WqlBSY7pXoOZWgEsVB4FDNfhcaXDA1j6Sr+w=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=

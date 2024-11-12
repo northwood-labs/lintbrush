@@ -7,7 +7,7 @@ require (
 	github.com/go-enry/go-enry/v2 v2.9.1
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/northwood-labs/cli-helpers v0.0.0-20240514222150-ad603e1e5510
-	github.com/owenrumney/go-sarif/v2 v2.3.1
+	github.com/owenrumney/go-sarif/v2 v2.3.3
 	github.com/rs/xid v1.5.0
 	github.com/spf13/cobra v1.8.1
 )
