@@ -9,7 +9,7 @@ require (
 	github.com/northwood-labs/cli-helpers v0.0.0-20240514222150-ad603e1e5510
 	github.com/owenrumney/go-sarif/v2 v2.3.3
 	github.com/rs/xid v1.6.0
-	github.com/spf13/cobra v1.10.1
+	github.com/spf13/cobra v1.10.2
 )
 
 require (
