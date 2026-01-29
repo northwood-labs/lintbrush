@@ -4,7 +4,7 @@ go 1.22.3
 
 require (
 	github.com/charmbracelet/log v0.4.2
-	github.com/go-enry/go-enry/v2 v2.9.3
+	github.com/go-enry/go-enry/v2 v2.9.4
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/northwood-labs/cli-helpers v0.0.0-20240514222150-ad603e1e5510
 	github.com/owenrumney/go-sarif/v2 v2.3.3
